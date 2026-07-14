@@ -1,0 +1,12 @@
+{
+  "name": "tiktok-growth-engine",
+  "version": "2.0.0",
+  "description": "TikTok Growth Engine - Free Followers & Likes",
+  "private": true,
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
